@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño y Relaciones - DB-Wiki</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>💻 DB-Wiki</h1>
+        <p>Diseño Lógico de Bases de Datos</p>
+    </header>
+
+    <nav>
+        <a href="index.php">Inicio</a>
+        <a href="fundamentos.php">Fundamentos</a>
+        <a href="modelo.php">Modelo Relacional</a>
+        <a href="diseno.php" class="active">Diseño y Relaciones</a>
+        <a href="sql.php">Lenguaje SQL</a>
+        <a href="test.php">Autoevaluación</a>
+    </nav>
+
+    <main>
+        <section class="card">
+            <h2>🔗 Los 3 Tipos de Relaciones Lógicas</h2>
+            <p>En el diseño de bases de datos relacionales, las tablas interactúan entre sí de tres formas posibles. Aquí te las explicamos con ejemplos de la vida diaria:</p>
+
+            <h3>1. Relación Uno a Uno (1:1)</h3>
+            <p>Un registro de la <strong>Tabla A</strong> se relaciona únicamente con un registro de la <strong>Tabla B</strong>, y viceversa.</p>
+            <ul>
+                <li><strong>Ejemplo de la vida real:</strong> Un Ciudadano y su Documento de Identidad (DUI/Cédula). Un ciudadano solo puede tener un documento, y ese documento le pertenece a un solo ciudadano.</li>
+            </ul>
+
+            <h3>2. Relación Uno a Muchos (1:M)</h3>
+            <p>Un registro de la <strong>Tabla A</strong> puede relacionarse con muchos de la <strong>Tabla B</strong>, pero un registro de la Tabla B solo pertenece a un único registro de la Tabla A.</p>
+            <ul>
+                <li><strong>Ejemplo de la vida real:</strong> Un Cliente y sus Facturas de compra. Un cliente puede hacer muchas compras y tener muchas facturas asociadas, pero cada factura individual le pertenece a un solo cliente específico.</li>
+            </ul>
+
+            <h3>3. Relación Muchos a Muchos (M:N)</h3>
+            <p>Muchos registros de la <strong>Tabla A</strong> pueden relacionarse con muchos de la <strong>Tabla B</strong>.</p>
+            <ul>
+                <li><strong>Ejemplo de la vida real:</strong> Estudiantes y Cursos. Un estudiante puede inscribirse en muchas materias diferentes, y cada materia tiene a muchos estudiantes inscritos en ella.</li>
+                <li><em>Nota técnica:</em> En las bases de datos reales, esta relación se rompe creando una tabla intermedia (tabla puente) con claves foráneas.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 DB-Wiki - Proyecto de Desarrollo Web</p>
+    </footer>
+</body>
+</html>
